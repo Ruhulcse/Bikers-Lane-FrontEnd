@@ -44,14 +44,14 @@ const Post = ({ post, setCurrentId }) => {
     return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
   };
 
-  const openPost = (e) => {
+  const openPost = () => {
     // dispatch(getPost(post._id, history));
 
     history.push(`/posts/${post._id}`);
   };
 
   return (
-    <Card className={classes.card} raised elevation={6}>
+    <Card className={classes.card} raised elevation={6} alt="">
       <ButtonBase
         component="span"
         name="test"
@@ -73,7 +73,7 @@ const Post = ({ post, setCurrentId }) => {
             style={{ color: 'white' }}
             size="small"
           >
-            <MoreHorizIcon fontSize="default" />
+            <MoreHorizIcon fontSize="medium" />
           </Button>
         </div>
         )}

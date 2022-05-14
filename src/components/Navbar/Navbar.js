@@ -42,6 +42,9 @@ const Navbar = () => {
         <img component={Link} to="/" src={memoriesText} alt="icon" height="45px" />
         <img className={classes.image} src={siteLogo} alt="icon" height="40px" />
       </Link>
+      <Button component={Link} variant="text" to="/events" className={classes.route}>Events</Button>
+      <Button component={Link} variant="text" to="/stats" className={classes.route}>Stats</Button>
+      <Button component={Link} variant="text" to="/marketplace" className={classes.route}>Marketplace</Button>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>

@@ -94,6 +94,7 @@ export const commentPost = (value, id) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
+  return false;
 };
 
 export const deletePost = (id) => async (dispatch) => {

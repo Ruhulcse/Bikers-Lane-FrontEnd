@@ -10,6 +10,7 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
+// Posts operations
 export const fetchPost = (id) => API.get(`/posts/${id}`);
 export const fetchPosts = (page) => API.get(`/posts?page=${page}`);
 export const fetchPostsByCreator = (name) => API.get(`/posts/creator?name=${name}`);
@@ -20,5 +21,12 @@ export const comment = (value, id) => API.post(`/posts/${id}/commentPost`, { val
 export const updatePost = (id, updatedPost) => API.patch(`/posts/${id}`, updatedPost);
 export const deletePost = (id) => API.delete(`/posts/${id}`);
 
+// Events Operations
+export const fetchEvent = (id) => API.get(`/events/${id}`);
+export const fetchEvents = (page) => API.get(`/events?page=${page}`);
+export const createEvent = (newEvent) => API.post('/events', newEvent);
+export const attendEvent = (id) => API.patch(`/events/${id}/`);
+
+// Auth Operations
 export const signIn = (formData) => API.post('/user/signin', formData);
 export const signUp = (formData) => API.post('/user/signup', formData);

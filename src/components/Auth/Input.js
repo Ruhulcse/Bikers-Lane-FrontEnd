@@ -12,6 +12,7 @@ const Input = ({ name, handleChange, label, half, autoFocus, type, handleShowPas
       variant="outlined"
       required
       fullWidth
+      minRows={3}
       label={label}
       autoFocus={autoFocus}
       type={type}

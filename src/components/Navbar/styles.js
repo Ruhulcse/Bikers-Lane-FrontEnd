@@ -55,6 +55,12 @@ export default makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
   },
+  route: {
+    display: 'flex',
+    align: 'left',
+    textAlign: 'left',
+    textDecoration: 'none',
+  },
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
